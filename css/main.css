@@ -58,6 +58,9 @@ main {
 }
 
 #text-inspiration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 15px;
 }
 
@@ -88,21 +91,61 @@ main {
   align-items: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+footer #main-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .inspire {
+    height: 520px;
+  }
+}
+
 @media screen and (max-width: 751px) {
   main {
-    margin: auto;
     justify-content: center;
     flex-direction: column;
   }
   .inspire {
     width: 90%;
     height: 500px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 30px;
   }
   #picture-inspiration {
-    padding: 30px 20px;
-    height: fit-content;
+    width: 90%;
+    height: 320px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 50px;
+  }
+  #quote-img {
+    height: fit-content;
+  }
+  #main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -122,5 +165,23 @@ main {
     display: none;
     height: 0;
     width: 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+  footer #main-footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  footer a {
+    text-decoration: none;
   }
 }

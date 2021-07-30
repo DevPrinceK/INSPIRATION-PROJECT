@@ -4,6 +4,10 @@ let quoteJson;
 let author = document.getElementById('author-holder');
 let quote = document.getElementById('main-quote-holder');
 
+let quoteText = document.getElementById('main-quote');
+
+quoteText.addEventListener('dblclick', copyText)
+
 // fetching the API
 async function getData() {
     // fetching data
@@ -53,6 +57,18 @@ function prevQuote() {
         quote.innerHTML = `${quoteJson[index].text}`;
 
     }
+}
+
+
+// copy text to clipboard
+function copyText() {
+    let copy = document.getElementById('main-quote-holder').textContent;
+
+    quoteText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    document.execCommand('copy');
+    console.log("Copy command executed successfully");
 }
 
 // display function
