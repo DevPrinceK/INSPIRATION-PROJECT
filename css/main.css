@@ -113,4 +113,9 @@ main {
     padding: 50px 30px;
     margin-bottom: 30px;
   }
+  #header-img {
+    display: none;
+    height: 0;
+    width: 0;
+  }
 }
