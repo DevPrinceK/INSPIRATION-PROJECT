@@ -85,7 +85,6 @@ main {
 #image {
   max-width: 100%;
   height: auto;
-
   overflow: hidden;
 }
 
@@ -111,5 +110,15 @@ main {
     padding: 30px 20px;
     height: fit-content;
     margin-bottom: 50px;
+  }
+}
+
+// even smaller screen 450px
+@media screen and (max-width: 450px) {
+  .inspire {
+    width: 95%;
+    height: fit-content;
+    padding: 50px 30px;
+    margin-bottom: 30px;
   }
 }
