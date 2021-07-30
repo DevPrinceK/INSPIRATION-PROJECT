@@ -63,6 +63,10 @@ main {
 
 #picture-inspiration {
   margin-left: 15px;
+  background-image: url("/images/silence.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
 }
 
 #text-inspiration {
@@ -114,12 +118,19 @@ footer a {
   text-decoration: none;
 }
 
+// NOTE
 @media screen and (max-width: 1000px) {
   .inspire {
     height: 520px;
   }
+
+  #picture-inspiration {
+    background-image: url("/images/pain.jpg");
+    background-size: cover;
+  }
 }
 
+// NOTE
 // responsiveness
 @media screen and (max-width: 751px) {
   main {
@@ -137,6 +148,7 @@ footer a {
   }
 
   #picture-inspiration {
+    background-image: url("/images/wakeup.jpg");
     //padding: 30px 20px;
     width: 90%;
     height: 320px;
@@ -156,6 +168,7 @@ footer a {
   }
 }
 
+// NOTE
 // even smaller screen 450px
 @media screen and (max-width: 450px) {
   .inspire {
@@ -174,6 +187,11 @@ footer a {
     display: none;
     height: 0;
     width: 0;
+  }
+
+  #picture-inspiration {
+    background-image: url("/images/re-reading.jpg");
+    background-size: cover;
   }
 
   footer {
