@@ -113,6 +113,11 @@ main {
     padding: 50px 30px;
     margin-bottom: 30px;
   }
+  #header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #header-img {
     display: none;
     height: 0;

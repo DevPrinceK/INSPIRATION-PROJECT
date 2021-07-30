@@ -122,6 +122,10 @@ main {
     margin-bottom: 30px;
   }
 
+  #header-text {
+    @include flex();
+  }
+
   #header-img {
     display: none;
     height: 0;
